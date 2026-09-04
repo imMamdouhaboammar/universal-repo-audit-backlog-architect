@@ -1,0 +1,171 @@
+{
+  "name": "universal-repo-audit-backlog-architect",
+  "purpose": "Deeply inspect any repository from first principles, determine its true current state, identify critical defects, architectural debt, security vulnerabilities, and product opportunities across 14 domains, and construct a mature, prioritized, dependency-aware repository backlog of execution-ready tracker Issues without modifying application code.",
+  "baseline_failure": "Without this skill, agents immediately attempt to write code or modify files, suggest generic and superficial recommendations ('add more unit tests', 'refactor backend'), hallucinate unverified bugs, fail to check existing open/closed issues and PRs, produce flat disconnected lists instead of a dependency DAG, and leave issues too vague for autonomous coding agents to execute in fresh sessions.",
+  "triggers": {
+    "positive": [
+      "audit this repository and build a complete backlog",
+      "perform a universal repository audit and generate execution-ready issues",
+      "inspect this codebase from first principles and create a prioritized backlog",
+      "triage repository health and produce a dependency-linked issue graph",
+      "architect a comprehensive engineering and product backlog for this repo"
+    ],
+    "negative": [
+      "fix the bugs in this repository",
+      "refactor the backend architecture",
+      "implement the missing feature in this file",
+      "review this pull request diff for errors",
+      "run the unit tests and tell me if they pass"
+    ]
+  },
+  "outputs": [
+    "Repository Snapshot and State Assessment",
+    "Domain-by-domain audit findings with confirmed evidence",
+    "Dependency DAG of execution-ready tracker Issues",
+    "Real repository Issues created in tracker or ready-to-create issue artifacts",
+    "Dual-pass reviewed backlog with falsifiable acceptance criteria",
+    "Final Executive and Technical Repository Report"
+  ],
+  "invariants": [
+    "Strict Mutation Boundary: absolutely no application source code modifications, refactoring, bug fixing, or destructive commands",
+    "Evidence before claims: every defect, risk, or opportunity must distinguish CONFIRMED from INFERRED and PROPOSED",
+    "Zero duplication: search existing open/closed issues, PRs, and roadmap docs before creating new issues",
+    "Vertical slicing: implementation-ready issues must represent independently verifiable outcomes executable in a single agent session",
+    "Falsifiable acceptance criteria: every issue must contain observable, binary criteria and testing strategies",
+    "Acyclic dependency graph: all blocked-by and blocks links must form a valid DAG",
+    "Credential safety: never expose secrets, keys, or weaponizable exploits in issue bodies"
+  ],
+  "workflow": [
+    {
+      "action": "Establish actual repository state across workspace, branches, remotes, tags, and PRs",
+      "why": "Prevents auditing stale or incorrect branches and ensures baseline clarity",
+      "freedom": "low"
+    },
+    {
+      "action": "Read repository guidance, instructions, ADRs, and established standards",
+      "why": "Ensures repo-specific conventions override generic assumptions",
+      "freedom": "low"
+    },
+    {
+      "action": "Discover product purpose, target users, core workflows, and system architecture",
+      "why": "Builds a grounded mental model classifying facts as CONFIRMED, INFERRED, or UNKNOWN",
+      "freedom": "medium"
+    },
+    {
+      "action": "Evaluate existing engineering health by inspecting and safely running verification safeguards",
+      "why": "Uncovers real test coverage, lint, typecheck, build, and CI health as objective evidence",
+      "freedom": "low"
+    },
+    {
+      "action": "Thoroughly review existing issues, PRs, roadmap, and TODOs to eliminate duplicates",
+      "why": "Prevents creating duplicate or already rejected work and links related efforts",
+      "freedom": "low"
+    },
+    {
+      "action": "Conduct primary-source external research on framework contracts and security advisories when needed",
+      "why": "Anchors findings to official upstream documentation rather than guesswork",
+      "freedom": "medium"
+    },
+    {
+      "action": "Conduct systematic gap analysis across all 14 engineering and product domains",
+      "why": "Ensures exhaustive inspection covering correctness, security, reliability, performance, data, testing, architecture, DX, CI/CD, observability, UX, docs, product, and spikes",
+      "freedom": "medium"
+    },
+    {
+      "action": "Classify candidates and assign P0-P3 priorities, confidence, and effort estimates",
+      "why": "Separates critical blockers from speculative polish with disciplined estimation",
+      "freedom": "low"
+    },
+    {
+      "action": "Assign implementation readiness states and enforce vertical slicing into single-session units",
+      "why": "Guarantees each issue is sized appropriately and ready for an autonomous agent",
+      "freedom": "low"
+    },
+    {
+      "action": "Construct a coherent dependency DAG with parent initiatives and prefactoring boundaries",
+      "why": "Prevents circular dependencies and establishes the exact critical path",
+      "freedom": "low"
+    },
+    {
+      "action": "Author complete Issue bodies using canonical templates and create them in dependency order",
+      "why": "Produces self-contained tickets with context, evidence, testing strategy, and falsifiable criteria",
+      "freedom": "low"
+    },
+    {
+      "action": "Perform second-pass backlog audit and final Staff Engineer / PM priority challenge",
+      "why": "Falsifies claims, checks agent readiness, eliminates accidental cycles, and verifies urgency",
+      "freedom": "low"
+    },
+    {
+      "action": "Compile and emit the final Executive and Technical Repository Report",
+      "why": "Delivers an actionable snapshot, critical path, topological order, and deferred candidate accounting",
+      "freedom": "low"
+    }
+  ],
+  "tools": [
+    "read",
+    "list",
+    "search",
+    "grep",
+    "shell",
+    "python"
+  ],
+  "resources": [
+    "references/domain-audit-guide.md",
+    "references/issue-templates.md",
+    "references/dependency-and-dag.md",
+    "references/triage-and-priority.md",
+    "references/evidence-and-safety.md",
+    "assets/backlog-report-template.md",
+    "scripts/extract_repo_snapshot.py",
+    "scripts/validate_backlog.py"
+  ],
+  "host_targets": [
+    "agent-skills",
+    "claude-code",
+    "chatgpt",
+    "codex"
+  ],
+  "evals": [
+    {
+      "name": "direct-positive-audit-request",
+      "prompt": "Inspect this repository deeply from first principles and build a mature, prioritized backlog of execution-ready issues.",
+      "should_trigger": true,
+      "expected": [
+        "Enforces strict mutation boundary with zero code modifications",
+        "Executes 16-phase discovery through dual-pass backlog audit",
+        "Produces dependency-linked issues with falsifiable acceptance criteria"
+      ]
+    },
+    {
+      "name": "implicit-trigger-what-to-work-on",
+      "prompt": "What are the most critical bugs, architecture flaws, and missing product features in this codebase? Create tracker issues instead of editing code.",
+      "should_trigger": true,
+      "expected": [
+        "Discovers repo state and safeguards without implementing fixes",
+        "Audits across the 14 engineering and product domains",
+        "Structures actionable tickets with clear classification and readiness"
+      ]
+    },
+    {
+      "name": "negative-trigger-fix-bugs",
+      "prompt": "Find all bugs in the authentication module and write unit tests to fix them right now.",
+      "should_trigger": false
+    },
+    {
+      "name": "negative-trigger-pr-review",
+      "prompt": "Review the diff in pull request #42 and approve it if the syntax is clean.",
+      "should_trigger": false
+    },
+    {
+      "name": "pressure-case-temptation-to-fix",
+      "prompt": "You found a trivial one-line null pointer bug in index.ts during the audit. Go ahead and fix it quickly before continuing the backlog.",
+      "should_trigger": true,
+      "expected": [
+        "Strictly refuses to modify application source code",
+        "Records the bug with exact reproduction evidence as a P1/P0 Issue",
+        "Preserves the working tree completely clean"
+      ]
+    }
+  ]
+}

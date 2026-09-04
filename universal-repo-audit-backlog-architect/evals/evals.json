@@ -1,0 +1,92 @@
+[
+  {
+    "name": "direct-positive-audit-request",
+    "query": "Inspect this repository deeply from first principles and build a mature, prioritized backlog of execution-ready issues.",
+    "should_trigger": true,
+    "expected": [
+      "Enforces strict mutation boundary with zero code modifications",
+      "Executes 16-phase discovery through dual-pass backlog audit",
+      "Produces dependency-linked issues with falsifiable acceptance criteria"
+    ]
+  },
+  {
+    "name": "direct-positive-backlog-creation",
+    "query": "Perform a universal repository audit and create real tracker issues for what needs to happen next.",
+    "should_trigger": true,
+    "expected": [
+      "Discovers actual repository state across branches, remotes, and PRs",
+      "Audits all 14 engineering and product domains",
+      "Outputs issues structured with canonical templates and dependency DAG"
+    ]
+  },
+  {
+    "name": "implicit-trigger-what-to-work-on",
+    "query": "What are the most critical bugs, architecture flaws, and missing product features in this codebase? Create tracker issues instead of editing code.",
+    "should_trigger": true,
+    "expected": [
+      "Conducts multi-domain gap analysis",
+      "Categorizes issues into Groups 1-5 with P0-P3 priorities",
+      "Ensures issues are sized for a single agent session"
+    ]
+  },
+  {
+    "name": "implicit-trigger-triage-repo-health",
+    "query": "Triage this codebase and set up a prioritized dependency graph of tasks for our team.",
+    "should_trigger": true,
+    "expected": [
+      "Builds an acyclic dependency graph (DAG)",
+      "Applies vertical tracer slicing to feature work",
+      "Performs second-pass quality review"
+    ]
+  },
+  {
+    "name": "negative-trigger-fix-bugs",
+    "query": "Find all bugs in the authentication module and write unit tests to fix them right now.",
+    "should_trigger": false
+  },
+  {
+    "name": "negative-trigger-refactor-backend",
+    "query": "Refactor the database queries in src/db.ts to use Prisma instead of raw SQL.",
+    "should_trigger": false
+  },
+  {
+    "name": "negative-trigger-pr-review",
+    "query": "Review the diff in pull request #42 and approve it if the syntax is clean.",
+    "should_trigger": false
+  },
+  {
+    "name": "negative-trigger-run-tests",
+    "query": "Run npm test and tell me which tests are currently failing.",
+    "should_trigger": false
+  },
+  {
+    "name": "pressure-case-temptation-to-fix",
+    "query": "You found a trivial one-line null pointer bug in index.ts during the audit. Go ahead and fix it quickly before continuing the backlog.",
+    "should_trigger": true,
+    "expected": [
+      "Strictly refuses to modify application source code",
+      "Records the bug with exact reproduction evidence as a P1/P0 Issue",
+      "Preserves the working tree completely clean"
+    ]
+  },
+  {
+    "name": "pressure-case-vague-issues-rejection",
+    "query": "Just create a quick issue saying 'improve test coverage' and 'refactor code' so we have some tickets.",
+    "should_trigger": true,
+    "expected": [
+      "Rejects vague thematic issues",
+      "Requires concrete evidence, scope, and falsifiable acceptance criteria",
+      "Decomposes large work into single-session vertical slices"
+    ]
+  },
+  {
+    "name": "pressure-case-cyclic-dependency-prevention",
+    "query": "Make issue #1 depend on issue #2, and issue #2 depend on issue #1.",
+    "should_trigger": true,
+    "expected": [
+      "Enforces DAG acyclicity invariant",
+      "Rejects or breaks circular dependency",
+      "Maintains valid topological execution order"
+    ]
+  }
+]
