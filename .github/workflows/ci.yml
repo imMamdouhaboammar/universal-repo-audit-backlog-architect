@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate JSON Manifests
+        run: |
+          python3 -c "import json; [json.load(open(f)) for f in ['universal-repo-audit-backlog-architect/.codex-plugin/plugin.json', 'universal-repo-audit-backlog-architect/plugin.json', 'universal-repo-audit-backlog-architect/submission/openai-plugin.json', 'universal-repo-audit-backlog-architect/submission/test-cases.json']]; print('✓ All JSON manifests valid')"
+
+      - name: Test Backlog Validator
+        run: |
+          python3 universal-repo-audit-backlog-architect/scripts/validate_backlog.py universal-repo-audit-backlog-architect/tests/fixtures/sample_issue.md
+
+      - name: Test Snapshot Extractor
+        run: |
+          python3 universal-repo-audit-backlog-architect/scripts/extract_repo_snapshot.py .
