@@ -1,0 +1,43 @@
+{
+  "name": "universal-repo-audit-backlog-architect",
+  "version": "1.0.0",
+  "description": "Deeply inspect any repository from the ground up, determine its true current state, audit across 14 engineering and product domains, and construct a mature, prioritized, dependency-aware repository backlog of execution-ready tracker Issues without modifying application code.",
+  "author": {
+    "name": "Mamdouh Aboammar",
+    "url": "https://github.com/imMamdouhaboammar"
+  },
+  "homepage": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+  "repository": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "chatgpt",
+    "repository-audit",
+    "backlog-architect",
+    "dag",
+    "issue-tracker",
+    "software-architecture",
+    "code-review",
+    "security-audit"
+  ],
+  "skills": "./",
+  "interface": {
+    "displayName": "Universal Repository Audit & Backlog Architect",
+    "shortDescription": "First-principles repo audit & DAG backlog creation across 14 domains",
+    "longDescription": "Deeply inspect any repository from the ground up, determine its true current state, audit across 14 engineering and product domains, and construct a mature, prioritized, dependency-aware repository backlog of execution-ready tracker Issues without modifying application code.",
+    "developerName": "Mamdouh Aboammar",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+    "defaultPrompt": [
+      "Inspect this repository deeply from first principles and build a mature, prioritized backlog of execution-ready issues.",
+      "Triage repository health across the 14 engineering domains and generate a dependency-linked issue graph.",
+      "What are the most critical bugs, architecture flaws, and missing product features in this codebase? Create tracker issues instead of editing code."
+    ],
+    "composerIcon": "./assets/plugin-mark.svg",
+    "logo": "./assets/plugin-mark.svg"
+  }
+}

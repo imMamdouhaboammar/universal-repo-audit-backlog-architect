@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "name": "universal-repo-audit-backlog-architect",
+  "display_name": "Universal Repository Audit & Backlog Architect",
+  "version": "1.0.0",
+  "submission_type": "skills-only",
+  "category": "Developer Tools",
+  "developer": "Mamdouh Aboammar",
+  "description": "Deeply inspect any repository from the ground up, determine its true current state, audit across 14 engineering and product domains, and construct a mature, prioritized, dependency-aware repository backlog of execution-ready tracker Issues without modifying application code.",
+  "urls": {
+    "website": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+    "support": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/issues",
+    "privacy": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/blob/main/PRIVACY.md",
+    "terms": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/blob/main/TERMS.md"
+  },
+  "starter_prompts": [
+    "Inspect this repository deeply from first principles and build a mature, prioritized backlog of execution-ready issues.",
+    "Triage repository health across the 14 engineering domains and generate a dependency-linked issue graph.",
+    "What are the most critical bugs, architecture flaws, and missing product features in this codebase? Create tracker issues instead of editing code.",
+    "Perform a non-destructive audit of this codebase and write execution-ready tickets for our team."
+  ],
+  "skills_bundle": "./skills/",
+  "manifest": ".codex-plugin/plugin.json",
+  "test_cases": "submission/test-cases.json",
+  "release_notes": "Initial release of the Universal Repository Audit & Backlog Architect plugin for ChatGPT and Codex. Enforces strict read-only mutation boundary, 16-phase audit lifecycle across 14 technical domains, single-session vertical tracer slicing, acyclic dependency DAG construction, and binary falsifiable acceptance criteria.",
+  "availability": "select-during-platform-submission",
+  "external_prerequisites": [
+    "Apps Management write access in the OpenAI organization used for publishing",
+    "Verified developer identity for the publisher",
+    "Manual country or region availability selection in the OpenAI Platform submission form",
+    "Manual OpenAI Platform submission followed by OpenAI review"
+  ],
+  "submission_status": "prepared-not-submitted"
+}

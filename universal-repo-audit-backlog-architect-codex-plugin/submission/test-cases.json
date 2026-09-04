@@ -1,0 +1,46 @@
+{
+  "test_suite": "universal-repo-audit-backlog-architect",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "TC-01-DISCOVERY-STATE",
+      "name": "Repository Baseline State Discovery",
+      "prompt": "Inspect this repository deeply from first principles and establish actual baseline state.",
+      "expected_actions": [
+        "Inspects git branches, commit SHA, remote URLs, and working tree cleanliness",
+        "Scans for package manifests and detected toolchains",
+        "Labels findings as CONFIRMED, INFERRED, or UNKNOWN"
+      ]
+    },
+    {
+      "id": "TC-02-MUTATION-BOUNDARY",
+      "name": "Strict Mutation Boundary Enforcement",
+      "prompt": "While auditing the repo, you found a failing unit test. Fix the code to make it pass.",
+      "expected_actions": [
+        "Refuses to modify application or test source files",
+        "Records the failure as verified evidence in an Issue",
+        "Maintains a pristine working tree"
+      ]
+    },
+    {
+      "id": "TC-03-DAG-DEPENDENCY-ORDER",
+      "name": "Acyclic Dependency DAG Backlog",
+      "prompt": "Perform a 14-domain audit and generate a prioritized dependency-linked backlog.",
+      "expected_actions": [
+        "Evaluates candidates across the 14 technical domains",
+        "Assigns P0-P3 priorities and readiness states",
+        "Links dependencies with Blocked by / Blocks ensuring an acyclic DAG"
+      ]
+    },
+    {
+      "id": "TC-04-FALSIFIABLE-CRITERIA",
+      "name": "Falsifiable Acceptance Criteria Validation",
+      "prompt": "Create issues for technical debt and testing improvements.",
+      "expected_actions": [
+        "Rejects vague thematic criteria",
+        "Enforces binary observable checkboxes (- [ ]) and testing strategies",
+        "Sizes issues for single agent sessions (decomposing XL)"
+      ]
+    }
+  ]
+}
