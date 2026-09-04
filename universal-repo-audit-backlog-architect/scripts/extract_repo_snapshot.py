@@ -96,11 +96,12 @@ def detect_safeguard_commands(repo_dir: Path) -> list[str]:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--repo", type=Path, default=Path.cwd(), help="Path to repository")
+    parser.add_argument("path", nargs="?", type=Path, default=None, help="Optional positional path to repository")
+    parser.add_argument("--repo", type=Path, default=None, help="Path to repository")
     parser.add_argument("--json", action="store_true", help="Output JSON format")
     args = parser.parse_args()
 
-    repo = args.repo.resolve()
+    repo = (args.path or args.repo or Path.cwd()).resolve()
     snapshot = {
         "repository_path": str(repo),
         "git": get_git_info(repo),
