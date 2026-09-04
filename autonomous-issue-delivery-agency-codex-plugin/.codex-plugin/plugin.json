@@ -1,0 +1,43 @@
+{
+  "name": "autonomous-issue-delivery-agency",
+  "version": "1.0.0",
+  "description": "Operate as an autonomous senior software engineering agency across repository backlogs, taking one actionable issue at a time through execution, TDD, atomic commits, verification, independent review, PR creation, CI monitoring, authorized merge, default branch post-merge health verification, and durable closure receipts.",
+  "author": {
+    "name": "Mamdouh Aboammar",
+    "url": "https://github.com/imMamdouhaboammar"
+  },
+  "homepage": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+  "repository": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "chatgpt",
+    "autonomous-agency",
+    "issue-delivery",
+    "pull-request",
+    "ci-cd",
+    "tdd",
+    "code-review",
+    "git-discipline"
+  ],
+  "skills": "./",
+  "interface": {
+    "displayName": "Autonomous Issue Delivery Agency",
+    "shortDescription": "Autonomous issue-to-merge delivery loop across repository backlogs",
+    "longDescription": "Operate as an autonomous senior software engineering agency across repository backlogs, taking one actionable issue at a time through execution, TDD, atomic commits, verification, independent review, PR creation, CI monitoring, authorized merge, default branch post-merge health verification, and durable closure receipts.",
+    "developerName": "Mamdouh Aboammar",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+    "defaultPrompt": [
+      "Act as an autonomous engineering agency and run the complete delivery loop across our repository backlog.",
+      "Take the ready issues from our issue tracker and deliver them iteratively through pull requests to merge.",
+      "Execute the autonomous issue delivery agency on this repository with TDD and verified commits."
+    ],
+    "composerIcon": "./assets/plugin-mark.svg",
+    "logo": "./assets/plugin-mark.svg"
+  }
+}

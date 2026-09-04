@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "name": "autonomous-issue-delivery-agency",
+  "display_name": "Autonomous Issue Delivery Agency",
+  "version": "1.0.0",
+  "submission_type": "skills-only",
+  "category": "Developer Tools",
+  "developer": "Mamdouh Aboammar",
+  "description": "Operate as an autonomous senior software engineering agency across repository backlogs, taking one actionable issue at a time through execution, TDD, atomic commits, verification, independent review, PR creation, CI monitoring, authorized merge, default branch post-merge health verification, and durable closure receipts.",
+  "urls": {
+    "website": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+    "support": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/issues",
+    "privacy": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/blob/main/PRIVACY.md",
+    "terms": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/blob/main/TERMS.md"
+  },
+  "starter_prompts": [
+    "Act as an autonomous engineering agency and run the complete delivery loop across our repository backlog.",
+    "Take the ready issues from our issue tracker and deliver them iteratively through pull requests to merge.",
+    "Execute the autonomous issue delivery agency on this repository with TDD and verified commits.",
+    "Process actionable repository issues autonomously with independent reviews and post-merge health checks."
+  ],
+  "skills_bundle": "./skills/",
+  "manifest": ".codex-plugin/plugin.json",
+  "test_cases": "submission/test-cases.json",
+  "release_notes": "Initial release of the Autonomous Issue Delivery Agency plugin for ChatGPT and Codex. Enforces strict single active issue invariant, workspace isolation, Issue Execution Contracts, TDD RED-to-GREEN cycle, atomic commits, multi-gate verification, independent code and security reviews, autonomous authorized PR merges, default branch health checks, and durable delivery receipts.",
+  "availability": "select-during-platform-submission",
+  "external_prerequisites": [
+    "Apps Management write access in the OpenAI organization used for publishing",
+    "Verified developer identity for the publisher",
+    "Manual country or region availability selection in the OpenAI Platform submission form",
+    "Manual OpenAI Platform submission followed by OpenAI review"
+  ],
+  "submission_status": "prepared-not-submitted"
+}

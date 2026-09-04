@@ -12,19 +12,46 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Verify CLI Runner & Bun Tests
+        run: |
+          bun ./bin/cli.js --help
+          bun ./bin/cli.js info
+          bun test
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Validate JSON Manifests
+      - name: Validate All JSON Manifests
         run: |
-          python3 -c "import json; [json.load(open(f)) for f in ['universal-repo-audit-backlog-architect/.codex-plugin/plugin.json', 'universal-repo-audit-backlog-architect/plugin.json', 'universal-repo-audit-backlog-architect/submission/openai-plugin.json', 'universal-repo-audit-backlog-architect/submission/test-cases.json']]; print('✓ All JSON manifests valid')"
+          python3 -c "import json, glob; manifests = glob.glob('**/*.json', recursive=True); [json.load(open(f)) for f in manifests if 'node_modules' not in f]; print(f'✓ All {len(manifests)} JSON manifests valid')"
 
-      - name: Test Backlog Validator
+      - name: Validate SKILL.md Frontmatters
+        run: |
+          python3 -c "
+          skills = ['SKILL.md', 'universal-repo-audit-backlog-architect/SKILL.md', 'autonomous-issue-delivery-agency/SKILL.md']
+          for s in skills:
+              content = open(s).read()
+              assert content.startswith('---'), f'{s} missing YAML frontmatter'
+              assert 'name:' in content, f'{s} missing name'
+              assert 'description:' in content, f'{s} missing description'
+          print('✓ All SKILL.md files validated successfully')
+          "
+
+      - name: Test Module 1 (Backlog Architect) Scripts
         run: |
           python3 universal-repo-audit-backlog-architect/scripts/validate_backlog.py universal-repo-audit-backlog-architect/tests/fixtures/sample_issue.md
-
-      - name: Test Snapshot Extractor
-        run: |
           python3 universal-repo-audit-backlog-architect/scripts/extract_repo_snapshot.py .
+
+      - name: Test Module 2 (Autonomous Delivery Agency) Scripts & Unit Tests
+        run: |
+          python3 autonomous-issue-delivery-agency/scripts/validate_delivery_contract.py --contract autonomous-issue-delivery-agency/tests/fixtures/sample_contract.md
+          python3 autonomous-issue-delivery-agency/scripts/validate_delivery_contract.py --receipt autonomous-issue-delivery-agency/tests/fixtures/sample_receipt.md
+          python3 autonomous-issue-delivery-agency/scripts/run_agency_snapshot.py .
+          python3 -m unittest discover -s autonomous-issue-delivery-agency/tests -p "test_*.py"

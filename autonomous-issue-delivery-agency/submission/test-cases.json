@@ -1,0 +1,49 @@
+{
+  "test_suite": "autonomous-issue-delivery-agency",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "TC-01-AGENCY-INIT",
+      "name": "Phase 0 Baseline State Discovery & Queue Rebuild",
+      "prompt": "Inspect this repository baseline state, remotes, and open issues to select the next actionable issue.",
+      "expected_actions": [
+        "Inspects git branches, commit SHA, remote URLs, and working tree cleanliness",
+        "Rebuilds actionable queue using priority hierarchy P0 to P3",
+        "Selects exactly one unblocked candidate issue"
+      ]
+    },
+    {
+      "id": "TC-02-CONTRACT-AND-TDD",
+      "name": "Issue Execution Contract & TDD RED-to-GREEN",
+      "prompt": "Deliver issue #42: Session Invalidation Race Condition using TDD.",
+      "expected_actions": [
+        "Synthesizes formal Issue Execution Contract before code edits",
+        "Establishes isolated branch issue/42-session-race",
+        "Writes failing RED test proving the race condition",
+        "Implements minimal GREEN solution",
+        "Creates atomic commits with conventional commit messages"
+      ]
+    },
+    {
+      "id": "TC-03-MULTI-GATE-VERIFICATION",
+      "name": "Pre-PR Verification & Independent Review Gate",
+      "prompt": "Run pre-PR verification and conduct independent code review on the implementation.",
+      "expected_actions": [
+        "Executes fresh unit, lint, typecheck, and build commands",
+        "Conducts independent diff review with zero blocking findings",
+        "Prepares comprehensive Pull Request linked to issue"
+      ]
+    },
+    {
+      "id": "TC-04-POST-MERGE-DELIVERY-RECEIPT",
+      "name": "Authorized Merge, Post-Merge Health Check & Delivery Receipt",
+      "prompt": "Verify CI passes, merge PR #108 autonomously, check default branch health, and close issue #42.",
+      "expected_actions": [
+        "Verifies remote CI checks pass cleanly",
+        "Merges PR #108 following repository merge policy without bypassing protection",
+        "Verifies default branch health at merge SHA",
+        "Closes issue #42 and records durable Delivery Receipt comment"
+      ]
+    }
+  ]
+}

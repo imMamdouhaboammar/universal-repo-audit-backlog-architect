@@ -1,0 +1,63 @@
+{
+  "name": "universal-repo-audit-backlog-architect",
+  "version": "1.0.0",
+  "description": "Universal Autonomous Engineering Suite: 14-Domain Repository Auditing, DAG Backlog Architecture & Autonomous Issue Delivery Agency for AI Agents",
+  "type": "module",
+  "main": "bin/cli.js",
+  "bin": {
+    "universal-repo-audit-backlog-architect": "./bin/cli.js",
+    "repo-audit": "./bin/cli.js",
+    "delivery-agency": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "universal-repo-audit-backlog-architect",
+    "autonomous-issue-delivery-agency",
+    "SKILL.md",
+    "marketplace.json",
+    ".skills.json",
+    "install.sh",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "bun bin/cli.js",
+    "audit": "python3 universal-repo-audit-backlog-architect/scripts/extract_repo_snapshot.py",
+    "validate:backlog": "python3 universal-repo-audit-backlog-architect/scripts/validate_backlog.py",
+    "validate:contract": "python3 autonomous-issue-delivery-agency/scripts/validate_delivery_contract.py",
+    "agency:snapshot": "python3 autonomous-issue-delivery-agency/scripts/run_agency_snapshot.py",
+    "test": "bun test && python3 -m unittest discover -s autonomous-issue-delivery-agency/tests -p 'test_*.py'",
+    "test:bun": "bun test",
+    "test:py": "python3 -m unittest discover -s autonomous-issue-delivery-agency/tests -p 'test_*.py'"
+  },
+  "keywords": [
+    "agent-skill",
+    "skills-sh",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini-cli",
+    "antigravity",
+    "bun",
+    "repository-audit",
+    "backlog-architect",
+    "issue-delivery-agency",
+    "tdd",
+    "autonomous-agents",
+    "omni-skill"
+  ],
+  "author": "Mamdouh Aboammar <https://github.com/imMamdouhaboammar>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/issues"
+  },
+  "homepage": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect#readme",
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=18.0.0"
+  }
+}

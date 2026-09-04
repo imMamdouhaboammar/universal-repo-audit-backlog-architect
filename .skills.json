@@ -1,0 +1,20 @@
+{
+  "$schema": "https://skills.sh/schema.json",
+  "name": "universal-repo-audit-backlog-architect",
+  "version": "1.0.0",
+  "description": "Universal Autonomous Engineering Suite: 14-Domain Repository Auditing, DAG Backlog Architecture & Autonomous Issue Delivery Agency for AI Agents",
+  "author": "Mamdouh Aboammar",
+  "repository": "https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect",
+  "license": "MIT",
+  "skill": "SKILL.md",
+  "tags": [
+    "agent-skill",
+    "automation",
+    "developer-tools",
+    "code-audit",
+    "backlog-architect",
+    "delivery-agency",
+    "tdd",
+    "omni-skill"
+  ]
+}

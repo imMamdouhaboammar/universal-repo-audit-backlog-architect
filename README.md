@@ -1,77 +1,68 @@
-# Universal Repository Audit & Backlog Architect
+# Autonomous Engineering Suite: Audit, Backlog Architecture & Delivery Agency
 
 <p align="center">
-  <img src="universal-repo-audit-backlog-architect/assets/plugin-mark.svg" width="160" height="160" alt="Universal Repository Audit & Backlog Architect Logo" />
+  <img src="universal-repo-audit-backlog-architect/assets/plugin-mark.svg" width="140" height="140" alt="Backlog Architect Mark" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="autonomous-issue-delivery-agency/assets/plugin-mark.svg" width="140" height="140" alt="Delivery Agency Mark" />
 </p>
 
 <p align="center">
-  <strong>Deep first-principles repository inspection, 14-domain gap analysis, and execution-ready DAG backlog architecture for AI coding agents and engineering teams.</strong>
+  <strong>A complete, closed-loop autonomous software engineering suite for AI coding agents and human teams: First-principles 14-domain repository auditing, dependency DAG backlog architecture, and an autonomous issue-to-merge delivery agency.</strong>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/actions/workflows/ci.yml"><img src="https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
+  <a href="https://skills.sh"><img src="https://img.shields.io/badge/skills.sh-discoverable-22c55e.svg" alt="Skills.sh" /></a>
+  <a href="https://bun.sh"><img src="https://img.shields.io/badge/runtime-Bun%20%7C%20Node-black.svg" alt="Bun | Node" /></a>
   <a href="https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect"><img src="https://img.shields.io/badge/omni--skill-100%25%20portable-brightgreen.svg" alt="Omni-Skill Portable" /></a>
   <a href="https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect"><img src="https://img.shields.io/badge/chatgpt-ready-orange.svg" alt="ChatGPT Ready" /></a>
   <a href="https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect"><img src="https://img.shields.io/badge/codex-plugin-purple.svg" alt="Codex Plugin" /></a>
+  <a href="https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect"><img src="https://img.shields.io/badge/claude--code-compatible-blueviolet.svg" alt="Claude Code Compatible" /></a>
 </p>
 
 ---
 
-## Overview
+## The Autonomous Engineering Lifecycle
 
-When dropped into a codebase, typical AI agents jump directly into premature code edits, patch symptoms without diagnosing root causes, or emit vague wishlists like *"improve tests"* or *"refactor architecture"*.
-
-**Universal Repository Audit & Backlog Architect** transforms your agent into a Staff Software Engineer, Software Architect, Technical Product Manager, QA Lead, Security Reviewer, and Repository Maintainer:
-
-- **Strict Read-Only Mutation Boundary**: Never modifies, patches, or breaks application code during an audit.
-- **16-Phase Systematic Lifecycle**: Traces repository health from git baseline discovery to acyclic dependency DAG synthesis.
-- **14 Technical & Product Domains**: Exhaustively inspects correctness, security, performance, data integrity, testing, CI/CD, DX, and product gaps.
-- **Single-Session Vertical Tracer Slices**: Decomposes large initiatives into discrete, independently verifiable tickets ($XS$ to $L$) executable in a fresh context window.
-- **Binary Falsifiable Acceptance Criteria**: Every issue requires concrete, observable checkboxes (`- [ ]`) and a verification strategy.
-
----
-
-## The 16-Phase Audit Lifecycle
+This repository provides two deeply integrated, complementary modules compliant with the **Omni-Skill** standard:
 
 ```mermaid
-flowchart TD
-    P1[1. Baseline State Discovery] --> P2[2. Governance & Rules First]
-    P2 --> P3[3. Product Purpose & Value]
-    P3 --> P4[4. Architecture Mapping]
-    P4 --> P5[5. Non-Destructive Health Check]
-    P5 --> P6[6. Existing Backlog Triage]
-    P6 --> P7[7. 14-Domain Deep Audit]
-    P7 --> P8[8. Candidate Issue Extraction]
-    P8 --> P9[9. Gate & Quality Review]
-    P9 --> P10[10. Prioritization & Sizing]
-    P10 --> P11[11. DAG Dependency Modeling]
-    P11 --> P12[12. Critical Path Identification]
-    P12 --> P13[13. Issue Tracker Creation]
-    P13 --> P14[14. Audit Report Synthesis]
-    P14 --> P15[15. Backlog Integrity Validation]
-    P15 --> P16[16. Presentation & Handoff]
+flowchart LR
+    subgraph Module1 ["Module 1: Backlog Architect"]
+        A["Repository Baseline"] --> B["14-Domain Deep Audit"]
+        B --> C["DAG Backlog Synthesis"]
+        C --> D["Execution-Ready Issues"]
+    end
+
+    subgraph Module2 ["Module 2: Autonomous Delivery Agency"]
+        D --> E["Select & Validate Issue"]
+        E --> F["Workspace Isolation & Contract"]
+        F --> G["TDD RED-to-GREEN"]
+        G --> H["Atomic Commits & Verification"]
+        H --> I["Independent Review & Repair"]
+        I --> J["PR Creation & CI Monitoring"]
+        J --> K["Authorized Merge & Health Check"]
+        K --> L["Issue Closure & Delivery Receipt"]
+        L --> M["Refresh Queue & Next Issue"]
+        M --> E
+    end
 ```
 
-1. **Establish Real State**: Git branches, dirty working tree, active commits, and tooling configurations.
-2. **Read Repository Rules First**: Ingest `AGENTS.md`, `CLAUDE.md`, `CONTRIBUTING.md`, and code conventions.
-3. **Understand What the Product Actually Is**: Product goals, user journeys, and core problem space.
-4. **Determine Real Architecture**: Boundary maps, data stores, API boundaries, and runtime topologies.
-5. **Safely Verify Health**: Run tests, linters, and typechecks non-destructively; record all errors.
-6. **Inspect Existing Backlog**: De-duplicate against existing issues and active pull requests.
-7. **Exhaustive Domain Evaluation**: Audit across all 14 technical domains.
-8. **Synthesize Candidate Issues**: Transform raw findings into structured candidate tickets.
-9. **Gate Every Finding**: Verify against the 8-question gating checklist.
-10. **Prioritize & Size**: Assign P0–P3 priorities and $XS$–$L$ effort sizing (decompose $XL$).
-11. **Construct Dependency DAG**: Model explicit upstream (`Blocked by: #X`) and downstream (`Blocks: #Y`) links.
-12. **Identify Critical Path**: Highlight the sequential chain unlocking maximum system value.
-13. **Create Issue Tracker Items**: Emit standard tracker issues or save local markdown files.
-14. **Assemble Backlog Report**: Build executive summary, health scorecards, and Mermaid DAG.
-15. **Validate Backlog Integrity**: Enforce acyclic graph topology, binary criteria, and evidence labels.
-16. **Deliver Executive & Technical Handoff**: Present high-level findings and direct issue links.
+1. **[Module 1: Universal Repository Audit & Backlog Architect](universal-repo-audit-backlog-architect/SKILL.md)**: Deeply inspects codebases from first principles without modifying source code, audits 14 engineering domains, and constructs a prioritized, dependency-aware DAG backlog of execution-ready issues.
+2. **[Module 2: Autonomous Issue Delivery Agency](autonomous-issue-delivery-agency/SKILL.md)**: Operates as an autonomous senior software engineering agency across repository backlogs, taking one actionable issue at a time through execution, TDD, atomic commits, verification, independent review, PR creation, CI monitoring, authorized merge, default branch post-merge health checks, and durable closure receipts.
 
 ---
 
-## The 14 Audit Domains
+## Module 1: Universal Repository Audit & Backlog Architect
+
+- **Strict Read-Only Boundary**: Never mutates or breaks application code during an audit.
+- **16-Phase Systematic Lifecycle**: Traces repository health from git baseline discovery to acyclic dependency DAG synthesis.
+- **14 Technical & Product Domains**: Exhaustively inspects correctness, security, performance, data integrity, testing, CI/CD, DX, and product gaps.
+- **Single-Session Vertical Tracer Slices**: Decomposes large initiatives into discrete, independently verifiable tickets ($XS$ to $L$) executable in a single session.
+- **Binary Falsifiable Acceptance Criteria**: Every issue requires concrete, observable checkboxes (`- [ ]`) and an automated verification command.
+
+### The 14 Audit Domains
 
 | Domain | Focus Area | Key Inspection Criteria |
 | :--- | :--- | :--- |
@@ -92,94 +83,88 @@ flowchart TD
 
 ---
 
-## Five Backlog Groups
+## Module 2: Autonomous Issue Delivery Agency
 
-Every backlog is organized into five distinct operational groups:
+$$\text{Issue} \rightarrow \text{Implement} \rightarrow \text{Verify} \rightarrow \text{Review} \rightarrow \text{PR} \rightarrow \text{Merge} \rightarrow \text{Close} \rightarrow \text{Document} \rightarrow \text{Repeat}$$
 
-1. **Group 1: Must-Fix Defects (P0 / P1)** — Production blockers, vulnerabilities, data loss, test failures.
-2. **Group 2: Core Product Completeness** — Missing user journeys, essential MVP features, incomplete flows.
-3. **Group 3: Architectural Foundation & Tech Debt** — Prefactoring, decoupling, database integrity, schema migrations.
-4. **Group 4: Quality, Testing & Operational Excellence** — Integration tests, observability, CI/CD, developer speed.
-5. **Group 5: Future Enhancements & Exploratory Spikes** — Advanced features, performance experiments, bounded spikes.
-
----
-
-## Canonical Issue Specification
-
-Every issue generated must follow this canonical structure:
-
-```markdown
-### Summary
-One to three clear sentences stating what needs to be done and why.
-
-### Classification
-- **Type**: Bug Fix | Feature | Technical Debt | Performance | Security | Testing | Documentation | Architecture | CI/CD | DX | Observability | Accessibility | Spike/RFC
-- **Priority**: P0 | P1 | P2 | P3
-- **Severity**: Critical | High | Medium | Low
-- **Confidence**: High | Medium | Low
-- **Estimated Effort**: XS | S | M | L
-- **Implementation Readiness**: Ready to implement | Blocked | Needs refinement
-
-### Problem Statement & Business/Technical Impact
-Detailed description of the issue, current behavior, and why it matters.
-
-### Evidence & Reproduction
-- **Status**: CONFIRMED | INFERRED | PROPOSED
-- **Traces**: Logs, reproduction steps, command outputs, or source code links.
-
-### Affected Components & Scope
-List of explicit files and directories affected.
-
-### Non-Goals / Explicit Out-of-Scope
-Explicit boundaries of what will NOT be addressed in this ticket.
-
-### Dependencies & Sequencing
-- **Blocked by**: #X, #Y
-- **Blocks**: #Z
-
-### Testing Strategy & Verification Plan
-- Unit tests to add/modify.
-- Integration tests or end-to-end verification.
-- Specific terminal command to confirm fix.
-
-### Acceptance Criteria
-- [ ] Observable binary condition 1
-- [ ] Observable binary condition 2
-- [ ] Specific automated test passes
-```
+- **Strict Single Active Issue Rule**: Exactly ONE repository issue in active implementation at a time.
+- **Single Write Owner**: Specialists inspect concurrently, but exactly ONE write owner mutates application source and active branches.
+- **Dirty Worktree Preservation**: Never destroys, overwrites, or discards uncommitted user changes. Isolate work in dedicated branches or worktrees.
+- **TDD for Behavioral Changes**: Establishes a falsifiable RED test that fails for the true defect before writing minimal GREEN code.
+- **Atomic Commit Protocol**: One coherent purpose per commit, Conventional Commits style, associated tests included.
+- **Circuit Breaker (Failure Recovery)**: If the same behavior fails after two consecutive attempts, STOP mutating. Freeze failure, hypothesize, and isolate root causes.
+- **Verification Freshness Law**: Any source code edit immediately invalidates prior verification evidence.
+- **Never Bypass Repository Protections**: Respect required CI, branch rulesets, merge queues, and code reviews even when administrative permissions exist.
+- **Authorized Merge & Post-Merge Health**: Verifies PR is `MERGED` on remote, checks default branch health, and posts a durable delivery receipt comment to the closed issue.
 
 ---
 
 ## Installation & Host Setup
 
-### 1. Agent Skills (Gemini CLI / Antigravity)
+### 1. Skills.sh (Instant Hub Install)
 ```bash
-git clone https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect.git ~/.gemini/config/skills/universal-repo-audit-backlog-architect
-ln -sfn ~/.gemini/config/skills/universal-repo-audit-backlog-architect ~/.gemini/config/skills/repo-audit-backlog-architect
+npx skills add imMamdouhaboammar/universal-repo-audit-backlog-architect
 ```
 
-### 2. OpenAI Codex Plugin
+### 2. Universal Multi-Agent One-Liner (Local)
 ```bash
-# Install to Codex plugins directory
-git clone https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect.git ~/.codex/plugins/universal-repo-audit-backlog-architect
-# Install to Codex skills directory
-ln -sfn ~/.codex/plugins/universal-repo-audit-backlog-architect ~/.codex/skills/universal-repo-audit-backlog-architect
+# Clone and run the universal installer across Claude, Antigravity, Codex, Cursor, and Agent Kernel
+git clone https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect.git
+cd universal-repo-audit-backlog-architect && ./install.sh
 ```
-Enable the plugin in `~/.codex/config.toml`:
+
+### 3. Zero-Install CLI (npx & Bun)
+```bash
+# View suite modules and agent compatibility
+npx universal-repo-audit-backlog-architect info
+
+# Run safe 14-domain repository snapshot
+npx universal-repo-audit-backlog-architect audit .
+
+# Validate issue DAG acyclicity & checkboxes
+bunx universal-repo-audit-backlog-architect validate-backlog ./tests/fixtures/sample_issue.md
+```
+
+### 4. Agent Skills (Gemini CLI / Antigravity)
+```bash
+# Clone the repository
+git clone https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect.git ~/.gemini/config/skills/autonomous-engineering-suite
+
+# Link Module 1: Backlog Architect
+ln -sfn ~/.gemini/config/skills/autonomous-engineering-suite/universal-repo-audit-backlog-architect ~/.gemini/config/skills/universal-repo-audit-backlog-architect
+
+# Link Module 2: Delivery Agency
+ln -sfn ~/.gemini/config/skills/autonomous-engineering-suite/autonomous-issue-delivery-agency ~/.gemini/config/skills/autonomous-issue-delivery-agency
+```
+
+### 5. OpenAI Codex Plugins
+```bash
+# Install Module 1 Plugin
+mkdir -p ~/.codex/plugins/universal-repo-audit-backlog-architect
+cp -R universal-repo-audit-backlog-architect-codex-plugin/. ~/.codex/plugins/universal-repo-audit-backlog-architect/
+
+# Install Module 2 Plugin
+mkdir -p ~/.codex/plugins/autonomous-issue-delivery-agency
+cp -R autonomous-issue-delivery-agency-codex-plugin/. ~/.codex/plugins/autonomous-issue-delivery-agency/
+```
+Enable both plugins in `~/.codex/config.toml`:
 ```toml
 [plugins."universal-repo-audit-backlog-architect@local-marketplace"]
 enabled = true
+
+[plugins."autonomous-issue-delivery-agency@local-marketplace"]
+enabled = true
 ```
 
-### 3. ChatGPT & Custom GPTs
-1. Create a new GPT in **ChatGPT -> Explore GPTs -> Create a GPT**.
-2. Copy the instructions from [`submission/chatgpt-instructions.md`](universal-repo-audit-backlog-architect/submission/chatgpt-instructions.md).
-3. Set avatar to [`assets/plugin-mark.svg`](universal-repo-audit-backlog-architect/assets/plugin-mark.svg).
-4. Enable **Code Interpreter** and **Web Search**.
+### 6. ChatGPT & Custom GPTs
+- **Module 1 GPT**: Create GPT with instructions from [`universal-repo-audit-backlog-architect/submission/chatgpt-instructions.md`](universal-repo-audit-backlog-architect/submission/chatgpt-instructions.md) and avatar [`universal-repo-audit-backlog-architect/assets/plugin-mark.svg`](universal-repo-audit-backlog-architect/assets/plugin-mark.svg).
+- **Module 2 GPT**: Create GPT with instructions from [`autonomous-issue-delivery-agency/submission/chatgpt-instructions.md`](autonomous-issue-delivery-agency/submission/chatgpt-instructions.md) and avatar [`autonomous-issue-delivery-agency/assets/plugin-mark.svg`](autonomous-issue-delivery-agency/assets/plugin-mark.svg).
+- Enable **Code Interpreter** and **Web Search**.
 
-### 4. Claude Code
+### 7. Claude Code & Cursor
 ```bash
-git clone https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-architect.git ~/.claude/skills/universal-repo-audit-backlog-architect
+ln -sfn $(pwd)/universal-repo-audit-backlog-architect ~/.claude/skills/universal-repo-audit-backlog-architect
+ln -sfn $(pwd)/autonomous-issue-delivery-agency ~/.claude/skills/autonomous-issue-delivery-agency
 ```
 
 ---
@@ -187,57 +172,73 @@ git clone https://github.com/imMamdouhaboammar/universal-repo-audit-backlog-arch
 ## Repository Structure
 
 ```text
-universal-repo-audit-backlog-architect/
-├── .codex-plugin/
-│   └── plugin.json                     # Codex plugin manifest
-├── plugin.json                         # Root manifest for host compatibility
-├── SKILL.md                            # Complete 16-phase orchestrator
-├── skill-spec.json                     # Machine-readable specification
-├── assets/
-│   ├── plugin-mark.svg                 # High-resolution vector plugin icon
-│   └── backlog-report-template.md      # Executive and technical report template
-├── references/
-│   ├── domain-audit-guide.md           # 14 technical domain inspection guides
-│   ├── issue-templates.md              # Canonical issue templates (Bug, Security, Perf, etc.)
-│   ├── dependency-and-dag.md           # DAG construction, tracer slicing, single-session sizing
-│   ├── triage-and-priority.md          # P0-P3 definitions, severity vs priority, 5 groups
-│   └── evidence-and-safety.md          # Read-only boundaries, credential redaction rules
-├── scripts/
-│   ├── extract_repo_snapshot.py        # Safe read-only repo introspection utility
-│   └── validate_backlog.py             # Schema, binary checkbox, and DFS DAG cycle checker
-├── submission/
-│   ├── openai-plugin.json              # OpenAI Platform submission descriptor
-│   ├── test-cases.json                 # Automated review test cases
-│   ├── chatgpt-instructions.md         # Custom GPT & ChatGPT system prompt
-│   └── README.md                       # Distribution and submission guide
-├── evals/
-│   └── evals.json                      # 11 comprehensive evaluation scenarios
-└── tests/
-    └── fixtures/sample_issue.md        # Test issue fixture for automated validation
+.
+├── SKILL.md                                           # Master root orchestrator (Omni-Skill compliant)
+├── package.json                                       # Multi-agent package & binary definition
+├── marketplace.json                                   # Claude Plugin & Marketplace manifest
+├── .skills.json                                       # Skills.sh registry manifest
+├── install.sh                                         # Universal multi-agent installer
+├── bin/
+│   └── cli.js                                         # Executable zero-install CLI runner
+├── universal-repo-audit-backlog-architect/            # Module 1: Backlog Architect
+│   ├── .codex-plugin/plugin.json                      # Codex manifest
+│   ├── plugin.json                                    # Platform manifest
+│   ├── SKILL.md                                       # 16-phase audit lifecycle orchestrator
+│   ├── skill-spec.json                                # Universal SkillSpec
+│   ├── assets/                                        # Vector mark and report templates
+│   ├── references/                                    # 14-domain guides, DAG, triage, safety
+│   ├── scripts/                                       # extract_repo_snapshot.py, validate_backlog.py
+│   ├── submission/                                    # ChatGPT instructions & test cases
+│   └── tests/                                         # Test fixtures
+│
+├── autonomous-issue-delivery-agency/                  # Module 2: Delivery Agency
+│   ├── .codex-plugin/plugin.json                      # Codex manifest
+│   ├── plugin.json                                    # Platform manifest
+│   ├── SKILL.md                                       # 20-phase delivery loop orchestrator
+│   ├── skill-spec.json                                # Universal SkillSpec
+│   ├── assets/                                        # Vector mark, contract & receipt templates
+│   ├── references/                                    # State machine, specialist matrix, gates
+│   ├── scripts/                                       # validate_delivery_contract.py, run_agency_snapshot.py
+│   ├── submission/                                    # ChatGPT instructions & test cases
+│   ├── evals/                                         # 12 evaluation scenarios
+│   └── tests/                                         # Fixtures and Python unittest suite
+│
+├── universal-repo-audit-backlog-architect-codex-plugin/ # Codex packaging wrapper for Module 1
+├── autonomous-issue-delivery-agency-codex-plugin/       # Codex packaging wrapper for Module 2
+├── tests/
+│   └── cli.test.ts                                    # Bun CLI & distribution test suite
+├── .github/
+│   ├── ISSUE_TEMPLATE/                                # Issue templates (audit finding, delivery task)
+│   └── workflows/ci.yml                               # CI matrix validating Bun, Python, and manifests
+├── CONTRIBUTING.md                                    # Development and validation guidelines
+├── LICENSE                                            # MIT License
+└── SECURITY.md                                        # Security policy
 ```
 
 ---
 
-## Validation & Testing
+## Local Validation & Quality Gates
+
+Run all automated quality gates across both modules:
 
 ```bash
-# Validate backlog issues, markdown tables, and DAG acyclicity
-python3 universal-repo-audit-backlog-architect/scripts/validate_backlog.py universal-repo-audit-backlog-architect/tests/fixtures/sample_issue.md
+# 1. Validate all JSON manifests
+python3 -c "import json, glob; [json.load(open(f)) for f in glob.glob('*/**/*.json', recursive=True) if 'node_modules' not in f]; print('✓ All JSON manifests valid')"
 
-# Extract safe read-only repository snapshot
+# 2. Module 1: Backlog validator and repo snapshot test
+python3 universal-repo-audit-backlog-architect/scripts/validate_backlog.py universal-repo-audit-backlog-architect/tests/fixtures/sample_issue.md
 python3 universal-repo-audit-backlog-architect/scripts/extract_repo_snapshot.py .
 
-# Run Omni-Skill cross-platform portability suite
+# 3. Module 2: Contract validator, receipt validator, snapshot test, and unit tests
+python3 autonomous-issue-delivery-agency/scripts/validate_delivery_contract.py --contract autonomous-issue-delivery-agency/tests/fixtures/sample_contract.md
+python3 autonomous-issue-delivery-agency/scripts/validate_delivery_contract.py --receipt autonomous-issue-delivery-agency/tests/fixtures/sample_receipt.md
+python3 autonomous-issue-delivery-agency/scripts/run_agency_snapshot.py .
+python3 -m unittest discover -s autonomous-issue-delivery-agency/tests -p "test_*.py"
+
+# 4. Omni-Skill cross-platform portability verification
 python3 ~/.gemini/config/skills/omni-skill/scripts/validate_portability.py universal-repo-audit-backlog-architect --targets agent-skills,claude-code,chatgpt,codex
+python3 ~/.gemini/config/skills/omni-skill/scripts/validate_portability.py autonomous-issue-delivery-agency --targets agent-skills,claude-code,chatgpt,codex
 ```
-
----
-
-## Security & Privacy
-
-- **Read-Only**: Strictly enforces zero modifications to target application code.
-- **Redaction**: Automatically flags and redacts exposed credentials, tokens, and secrets.
-- **Safe Exploits**: Categorizes vulnerabilities without generating operational attack payloads.
 
 ---
 

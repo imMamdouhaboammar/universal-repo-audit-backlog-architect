@@ -1,0 +1,195 @@
+{
+  "name": "autonomous-issue-delivery-agency",
+  "purpose": "Operate as an autonomous senior software engineering agency across repository backlogs, taking one actionable issue at a time through execution, TDD, atomic commits, verification, independent review, PR creation, CI monitoring, authorized merge, default branch health check, issue closure with durable receipts, and continuous queue advancement.",
+  "baseline_failure": "Without this skill, AI agents attempt multiple tasks concurrently causing merge conflicts, stop prematurely after opening a PR without verifying CI or merging, fail to isolate working trees, skip TDD and regression testing, push unstructured noisy commits, mutate dirty worktrees blindly, and fail to leave durable receipts and ledger states across sessions.",
+  "triggers": {
+    "positive": [
+      "run the autonomous issue delivery agency on this repository backlog",
+      "execute our backlog issues iteratively from start to finish",
+      "act as an autonomous engineering agency and deliver ready tracker issues",
+      "run the issue to implement to verify to PR to merge to close loop",
+      "process actionable repository issues autonomously with TDD and reviews"
+    ],
+    "negative": [
+      "audit this repository and build a complete backlog",
+      "triage repository health and generate a dependency-linked issue graph",
+      "explain how this function works",
+      "format this output as a table",
+      "create a new branch named test"
+    ]
+  },
+  "outputs": [
+    "Isolated execution workspace and verified contract per issue",
+    "Falsifiable regression tests following TDD RED-to-GREEN cycle",
+    "Clean atomic commits with conventional commit messages",
+    "Pre-PR verification and independent code/security review reports",
+    "Production-grade Pull Requests with comprehensive checklists",
+    "Merged PRs with default branch post-merge health verification",
+    "Closed GitHub issues with durable markdown delivery receipts",
+    "Durable agency ledger and session checkpoint reports"
+  ],
+  "invariants": [
+    "Strict single active issue invariant: exactly one issue in active implementation at a time",
+    "Single write owner: independent specialists may read concurrently, but only one write owner mutates code",
+    "Dirty worktree preservation: never destroy, overwrite, or discard unrelated uncommitted changes",
+    "Circuit breaker failure recovery: halt speculative edits after two failed attempts and freeze failure",
+    "TDD for behavioral changes: establish falsifiable RED before implementing minimal GREEN",
+    "Verification freshness law: any source mutation invalidates previous verification evidence",
+    "Never bypass repository protections: respect required CI, reviews, rulesets, and merge queues even with admin privileges",
+    "Merge is not the end: verify remote MERGED status and default branch health before closing issue",
+    "Durable delivery receipt: leave structured evidence comment on closed issue before queue advance"
+  ],
+  "workflow": [
+    {
+      "action": "Restore repository baseline and inspect git, remotes, branches, and working tree",
+      "why": "Prevents building upon broken or uncommitted workspace state",
+      "freedom": "low"
+    },
+    {
+      "action": "Rebuild the actionable issue queue from live remote state before selecting candidate",
+      "why": "Guarantees priority decisions reflect current merged state and dependency changes",
+      "freedom": "low"
+    },
+    {
+      "action": "Select highest-value unblocked issue following strict P0 to P3 priority rules",
+      "why": "Prevents chasing low-impact tasks while critical blockers exist",
+      "freedom": "low"
+    },
+    {
+      "action": "Validate candidate issue against current codebase to catch resolved, duplicate, or obsolete tasks",
+      "why": "Prevents implementing redundant or misaligned changes without writing code",
+      "freedom": "low"
+    },
+    {
+      "action": "Decompose oversized issues into single-session vertical tracer slices when necessary",
+      "why": "Ensures every active PR is reviewable and manageable in a single agent session",
+      "freedom": "medium"
+    },
+    {
+      "action": "Verify no concurrent human or agent work exists and claim issue using repository conventions",
+      "why": "Prevents duplicate conflicting implementation efforts",
+      "freedom": "low"
+    },
+    {
+      "action": "Establish isolated workspace or dedicated issue branch preserving existing changes",
+      "why": "Guarantees clean branch boundaries and zero accidental dirty worktree absorption",
+      "freedom": "low"
+    },
+    {
+      "action": "Formulate concise Issue Execution Contract covering scope, invariants, and test strategy",
+      "why": "Binds implementation strictly to observable acceptance criteria",
+      "freedom": "low"
+    },
+    {
+      "action": "Route smallest required team of specialist plugins based on actual issue domain",
+      "why": "Brings targeted expertise (security, database, UI) without context bloat",
+      "freedom": "medium"
+    },
+    {
+      "action": "Discover relevant code paths, callers, nearby tests, and upstream contracts",
+      "why": "Prevents guessing architecture and locates exact failure points",
+      "freedom": "medium"
+    },
+    {
+      "action": "Establish valid failing RED test harness demonstrating missing behavior or bug",
+      "why": "Proves test validity before code implementation begins",
+      "freedom": "low"
+    },
+    {
+      "action": "Implement smallest complete solution satisfying acceptance criteria",
+      "why": "Prevents scope creep, opportunistic refactoring, and speculative abstractions",
+      "freedom": "low"
+    },
+    {
+      "action": "Produce clean atomic commits with conventional commit messages and associated tests",
+      "why": "Ensures bisectable, reviewable git history",
+      "freedom": "low"
+    },
+    {
+      "action": "Run fresh multi-gate verification across unit, integration, lint, and build",
+      "why": "Guarantees freshly tested behavior with zero stale completion claims",
+      "freedom": "low"
+    },
+    {
+      "action": "Perform self-review and independent code/security review on branch diff",
+      "why": "Catches edge cases, security regressions, and design smells before opening PR",
+      "freedom": "low"
+    },
+    {
+      "action": "Repair review findings and re-verify affected surfaces",
+      "why": "Maintains zero blocking review findings before pull request submission",
+      "freedom": "low"
+    },
+    {
+      "action": "Create structured Pull Request linked to issue with full verification evidence",
+      "why": "Communicates clear value, scope, and regression coverage to reviewers and CI",
+      "freedom": "low"
+    },
+    {
+      "action": "Monitor CI checks with bounded status loop and diagnose failures from evidence",
+      "why": "Ensures remote pipeline green state without polling spam",
+      "freedom": "low"
+    },
+    {
+      "action": "Confirm merge readiness and execute merge under repository policy and authorized autonomy",
+      "why": "Applies verified changes to base branch without violating protections",
+      "freedom": "low"
+    },
+    {
+      "action": "Verify post-merge remote state, confirm default branch health, and record durable delivery receipt",
+      "why": "Guarantees default branch stability, closes issue with proof, and cleans up workspace",
+      "freedom": "low"
+    }
+  ],
+  "tools": [
+    "read",
+    "list",
+    "search",
+    "grep",
+    "patch",
+    "write",
+    "shell",
+    "python"
+  ],
+  "resources": [
+    "references/agency-lifecycle-and-state-machine.md",
+    "references/specialist-routing-matrix.md",
+    "references/issue-execution-contract.md",
+    "references/verification-and-gates.md",
+    "references/delivery-receipt-and-ledger.md",
+    "references/merge-and-release-policy.md",
+    "assets/delivery-receipt-template.md",
+    "assets/issue-contract-template.md",
+    "assets/plugin-mark.svg",
+    "scripts/validate_delivery_contract.py",
+    "scripts/run_agency_snapshot.py"
+  ],
+  "host_targets": [
+    "agent-skills",
+    "chatgpt",
+    "codex",
+    "claude-code"
+  ],
+  "evals": [
+    {
+      "name": "direct-positive-delivery-loop",
+      "prompt": "run the autonomous issue delivery agency on this repository backlog",
+      "should_trigger": true,
+      "expected": [
+        "Inspects git status, remote, and open issues",
+        "Selects single highest priority unblocked issue",
+        "Enforces isolated workspace and execution contract",
+        "Follows TDD and atomic commits",
+        "Verifies PR and merge before closing issue"
+      ]
+    },
+    {
+      "name": "negative-near-miss-audit",
+      "prompt": "audit this repository and build a complete backlog",
+      "should_trigger": false,
+      "expected": [
+        "Routes to universal-repo-audit-backlog-architect rather than implementation agency"
+      ]
+    }
+  ]
+}
